@@ -1,4 +1,4 @@
-# MdbAngularFree
+# nyax-user-app-temp-json
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
@@ -25,3 +25,31 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## To login
+The project has 3 users already created for you. The details are as follows;
+{
+    id: 1,
+    name: "Nyasha",
+    surname: "Nyax",
+    email: "nyax@gmail.com",
+    password: "nyax@123",
+    role: UserRoles.ADMIN
+  },
+  {
+    id: 2,
+    name: "pride",
+    surname: "jena",
+    email: "pride@gmail.com",
+    password: "pride$123",
+    role: UserRoles.GENERAL,
+  },
+  {
+    id: 3,
+    name: "ropa",
+    surname: "muridzi",
+    email: "ropa@gmail.com",
+    password: "ropa@123",
+    role: UserRoles.ADMIN
+  }
+
