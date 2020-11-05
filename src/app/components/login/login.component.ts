@@ -13,7 +13,7 @@ import Swal from 'sweetalert2';
 })
 export class LoginComponent implements OnInit {
 
-  title = 'Nyax User App with Temp Json';
+  title = 'Student Lecturer Appointment System ';
   user: User;
   validation: Validation;
 
@@ -32,11 +32,10 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     var userLoggedIn: User;
-    userLoggedIn = this.userService.findOne(this.user.name, this.user.password);
+   // userLoggedIn = this.userService.findOne(this.user.name, this.user.password);
 
-    if (userLoggedIn != null) {
-      localStorage.setItem('userDetails', JSON.stringify(userLoggedIn));
-      localStorage.setItem('username', JSON.stringify(userLoggedIn.name));
+    if (true) {
+      console.log("loged");      
       this.router.navigateByUrl('/home');
     }
     else{

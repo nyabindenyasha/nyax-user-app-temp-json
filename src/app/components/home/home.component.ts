@@ -15,23 +15,23 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    this.loadMenuItems();
+   // this.loadMenuItems();
   }
 
-  loadMenuItems() {
-    if (localStorage.getItem('userDetails') == null) {
-      this.logout();
-    }
+  // loadMenuItems() {
+  //   if (localStorage.getItem('userDetails') == null) {
+  //     this.logout();
+  //   }
 
-    else this.userDetails = JSON.parse(localStorage.getItem('userDetails'));
+  //   else this.userDetails = JSON.parse(localStorage.getItem('userDetails'));
 
-  }
+  // }
 
-  getUsername(): string {
-    this.userDetails = JSON.parse(localStorage.getItem('userDetails'));
-    this.username = JSON.parse(localStorage.getItem('username'));
-    return (this.userDetails != null ? this.username : null);
-  }
+  // getUsername(): string {
+  //   this.userDetails = JSON.parse(localStorage.getItem('userDetails'));
+  //   this.username = JSON.parse(localStorage.getItem('username'));
+  //   return (this.userDetails != null ? this.username : null);
+  // }
 
   logout() {
     localStorage.clear();
